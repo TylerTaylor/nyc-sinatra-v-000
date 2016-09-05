@@ -1,0 +1,13 @@
+<h1>Figures Index Page</h1>
+
+<ul>
+  <% @figures.all.each do |figure| %>
+    <li>
+      <a href="/figures/<%= figure.id %>"><%= figure.name %></a>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/figures/new">Add a Figure</a><br>
+<a href="/landmarks">View Landmarks</a><br>
+<a href="/">Go Home</a>
